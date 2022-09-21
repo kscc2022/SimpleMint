@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv='expires' content='0'>
+    <meta http-equiv="Cache-Control" content="no-store">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/ethereum/web3.js/dist/web3.min.js"></script>
+    <script type="text/javascript" src="./index.js?version=1"></script>
+    <link href='index.css' rel='stylesheet'>
+  </head>
+  <body>
+
+    <h1>Mint Page<span id="version">v.0.0.0</span></h1>
+
+    <h2>INPUT</h2>
+    <div>
+      <label>RPC URL</label>
+      <input type="text" id="rpc_url" value="https://polygon-rpc.com/" placeholder="(e.g. https://polygon-rpc.com/)">
+    </div>
+
+    <div>
+      <label>NFT CONTRACT ADDRESS</label>
+      <input type="text" id="token_address" value="0xcB20ca1896B5eB9534EE7D625b2C2ABEBff351Ce" placeholder="NFTのコントラクトアドレス（e.g. 0x0000...）">
+    </div>
+
+    <div>
+      <label>AMOUNT</label>
+      <input type="number" id="need_amount" value="1" placeholder="何個ミントしたいか（e.g. 5）">
+    </div>
+
+    <div>
+      <label>PRIVATE KEY</label>
+      <input type="text" id="private_key" value="" placeholder="ウォレットの秘密鍵">
+    </div>
+
+    <div>
+      <label>WALLET ADDRESS</label>
+      <input type="text" id="wallet_address" value="" placeholder="ウォレットのアドレス（自動入力されるようにしたい）（e.g. 0x0000...）">
+    </div>
+
+    <div>
+      <label>LOOP DURATION (msec)</label>
+      <input type="number" id="duration" value="1000" placeholder="ループを何ミリ秒毎に呼ぶか。1000 で1秒。（e.g. 1000）">
+    </div>
+
+    <h2>GAS</h2>
+    <div>
+      <label>Gas Price (Gwei)</label>
+      <input type="text" id="gas_price" value="auto" placeholder="auto か空欄で自動取得">
+    </div>
+
+    <div>
+      <label>Multiplier (%）</label>
+      <input type="text" id="gas_price_multiplier" value="110" placeholder="Gas Price にこの倍率をかけたものをガス代とします。（e.g. 100）">
+    </div>
+
+    <div>
+      <label>Gas Price Limit (Gwei）</label>
+      <input type="text" id="gas_price_limit" value="1000" placeholder="この価格をガス代上限とする（e.g. 1000）">
+    </div>
+
+    <h2>SWITCH</h2>
+    <div>
+      <label>BOT</label>
+      <button id="toggle_button" onclick="toggle_bot_switch()">Off</button>
+    </div>
+
+    <h2>LOG</h2>
+    <div id="status_message"></div>
+
+  </body>
+</html>

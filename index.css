@@ -1,0 +1,47 @@
+* {
+  padding: 2px;
+}
+
+body {
+  background: #f0f0f0;
+}
+
+h1 span {
+  font-size: 0.7em;
+  color:  #999;
+}
+
+div {
+  margin: 10px 0;
+}
+
+label {
+  width: 220px;
+  display: inline-block;
+  font-weight: bolder;
+  color: #333;
+}
+
+input {
+  width: 560px;
+  height: 20px;
+  padding: 8px;
+  color: #666;
+}
+
+button {
+  padding: 8px;
+  width: 100px;
+  font-weight: bolder;
+}
+
+h2 {
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 2px solid #333;
+}
+
+p {
+  padding: 0px;
+  margin: 2px;
+}
